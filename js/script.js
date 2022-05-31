@@ -26,8 +26,6 @@ window.onload = function () {
         }
     }
 
-
-    fadeOutEffect; delay(0000);
     tr_page(language, current_page);
 }
 
@@ -87,28 +85,32 @@ function full_me() {
 const fadeOutEffect = setInterval(() => {
     if (!preloader.style.opacity) {
         preloader.style.opacity = 1;
+        preloader.style.display = "flex";
     }
+
     if (preloader.style.opacity > 0) {
         preloader.style.opacity -= 0.1;
     } else {
         preloader.style.display = "none";
+        preloader.style.opacity = 0;
         clearInterval(fadeOutEffect);
     }
-}, 00);
+}, 300);
 
 function get_slect(attr) {
     return document.getElementById(attr);
 }
 
 function tr_page(lang) {
-
+    fadeOutEffect;
     for (i = 0; i < tobet.length; i++) {
         tobet[i].innerHTML = promises[lang]["buttons"][i];
     }
     language = lang
     setCookie("lang", lang, 30);
-    type(promises[language]["text"][current_page]);
 
+    type(promises[language]["text"][current_page]);
+    
 }
 
 function setCookie(cname, cvalue, exdays) {
