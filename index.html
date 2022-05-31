@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/texts.js"></script>
+    
+</head>
+
+<body>
+    
+    <div class="preloader">
+        <img src="./static/App loader.gif" alt="spinner">
+    </div>
+
+    <div class="cli-header">
+        <div class="dot">
+            <img src="./static/cmd.png"/>
+                <a href="https://t.me/itsmeuknow">abrorbek</a>
+        </div>
+
+        <div class="admin" onmouseover="open_menu()" onmouseout="open_menu()"
+            >
+
+            <div id="menu">Menu</div>
+            <ul class="admin-list">
+                <li>――――――――――――</li>
+                <li>&nbsp</li>
+                <li>
+                    <a href="#" id="home">Home</a>
+                </li>
+                <li>-----------</li>
+                <li>
+                    <a href="#" id="aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="https://t.me/portfolio_itsmeuknow" id="projects">My Projects</a>
+                </li>
+                <li>
+                    <a href="https://github.com/abrorbekuz" id="stats">My Stats</a>
+                </li>
+                <li>-----------</li>
+                <li>
+                    <a href="#" id="contact_me">Contact Me</a>
+                </li>
+                <li>-----------</li>
+                <li id="lang">Til: </li>
+                <li>
+                    <a href="#" onclick="tr_page('uz')"> Uz </a>/
+                    <a href="#" onclick="tr_page('ru')"> Ru </a>/
+                    <a href="#" onclick="tr_page('en')"> En </a>
+                </li>
+                <li>&nbsp</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="result">
+            
+        </div>
+    </div>
+
+    <div class="input-area">
+        >_&nbsp<input type="text" name="query" id="q" spellcheck="false" placeholder="help">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
